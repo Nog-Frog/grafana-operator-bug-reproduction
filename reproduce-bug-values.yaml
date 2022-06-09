@@ -1,0 +1,15 @@
+postgresql:
+  auth:
+    username: grafana-user
+    password: grafana-password
+    database: grafana
+
+grafana-operator:
+  grafana:
+    config:
+      database:
+        type: postgres
+        host: postgresql:5432
+        name: grafana
+        user: grafana-user
+        password: grafana-password
